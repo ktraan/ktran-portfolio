@@ -6,8 +6,8 @@
       </h1>
     </div>
 
-    <v-avatar size="300"
-      ><v-row justify="center">
+    <v-avatar size="300">
+      <v-row class="d-sm-flex" justify="center">
         <v-img
           lazy-src="../assets/kevin.jpeg"
           src="../assets/kevin.jpeg"
@@ -18,7 +18,7 @@
     <h2 class="text-h3 mt-10 mb-md-5 font-weight-light">
       I'm Kevin Tran and I'm a full-stack developer.
     </h2>
-    <v-row class="d-none d-md-inline-flex mb-md-16" no-gutters>
+    <v-row class="d-sm-inline-flex mb-sm-16" no-gutters>
       <h3 class="font-weight-thin text-h4">
         My goal is to find developer position where I can build meaningful
         projects, and at the same time making everyone's life a bit easier. I am
@@ -34,7 +34,7 @@ export default {
   name: "Home",
   data: () => ({}),
 
-  computed: {}
+  computed: {},
 };
 </script>
 
