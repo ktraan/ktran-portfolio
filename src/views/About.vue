@@ -6,15 +6,16 @@
       </h1>
     </div>
 
-    <v-avatar size="300"
-      ><v-row justify="center">
+    <v-avatar size="300">
+      <v-row justify="center">
         <v-img
           lazy-src="../assets/kevin.jpeg"
           src="../assets/kevin.jpeg"
           max-width="400"
           align="center"
-        /> </v-row
-    ></v-avatar>
+        />
+      </v-row>
+    </v-avatar>
     <h2 class="text-h3 mt-10 mb-9 font-weight-light">
       I'm Kevin Tran and I'm a full-stack developer.
     </h2>
