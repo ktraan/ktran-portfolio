@@ -1,9 +1,10 @@
 <template>
   <v-app-bar app color="#32ad5d">
-    <v-row class="ml-1">
+    <v-row class="ml-1 d-flex">
       <div id="nav" class="d-flex" width="300">
         <v-btn
           color="#32ad5d"
+          class="d-none d-sm-flex"
           min-width="30"
           width="35"
           flat
@@ -12,12 +13,12 @@
           to="/"
           ><v-icon color="white">mdi-code-tags</v-icon></v-btn
         >
-        <v-toolbar-title style="color:white" class="ml-3 mt-1 "
+        <v-toolbar-title style="color:white" class="ml-3 mt-1 d-none d-sm-flex"
           >Kevin Tran</v-toolbar-title
         >
       </div>
     </v-row>
-    <v-col class="d-flex justify-end mt-1">
+    <v-col class="d-flex justify-sm-end justify-center mt-1 text-h1">
       <v-btn depressed color="#32ad5d" class="text-capitalize">
         <router-link to="/" class="white--text">About</router-link>
       </v-btn>

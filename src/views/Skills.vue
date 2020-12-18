@@ -2,7 +2,9 @@
   <v-container>
     <!-- Front End -->
     <v-row class="d-sm-flex justify-center mt-5">
-      <h1 class="text-h2 text-decoration-underline">
+      <h1
+        class="text-h4 text-sm-h2 justify-sm-center text-decoration-underline font-weight-light"
+      >
         Front End Development
       </h1>
     </v-row>
@@ -16,7 +18,9 @@
 
     <!-- Back End -->
     <v-row class="d-sm-flex justify-center mt-10">
-      <h1 class="text-h2 text-decoration-underline">
+      <h1
+        class="text-h4 text-sm-h2 text-decoration-underline font-weight-light"
+      >
         Back End Development:
       </h1>
     </v-row>
@@ -29,7 +33,11 @@
 
     <!-- Database -->
     <v-row class="d-sm-flex justify-center mt-10">
-      <h1 class="text-h2 text-decoration-underline">Database Systems</h1>
+      <h1
+        class="text-h4 text-sm-h2 text-decoration-underline font-weight-light"
+      >
+        Database Systems
+      </h1>
     </v-row>
     <v-row class="d-sm-flex justify-center mt-10">
       <v-img class="" src="../assets/sql.png" max-width="90"></v-img>
@@ -40,7 +48,11 @@
 
     <!-- Mobile Development -->
     <v-row class=" d-sm-flex justify-center mt-10">
-      <h1 class="text-h2 text-decoration-underline">Mobile Development</h1>
+      <h1
+        class="text-h4 text-sm-h2 text-decoration-underline font-weight-light"
+      >
+        Mobile Development
+      </h1>
     </v-row>
     <v-row class="d-sm-flex justify-center mt-10 mb-16 ">
       <v-img class="mr-16" src="../assets/android.png" max-width="90"></v-img>
@@ -49,7 +61,11 @@
 
     <!-- Other Technologies -->
     <v-row class="d-sm-flex justify-center mt-10">
-      <h1 class="text-h2 text-decoration-underline">Other Technologies</h1>
+      <h1
+        class="text-h4 text-sm-h2 text-decoration-underline font-weight-light"
+      >
+        Other Technologies
+      </h1>
     </v-row>
     <v-row class="d-sm-flex justify-center mt-10 mb-10">
       <v-img class="mr-8" src="../assets/github.png" max-width="90"></v-img>
@@ -60,7 +76,9 @@
 
     <!-- Project Stuff -->
     <v-row class="d-sm-flex justify-center mt-10">
-      <h1 class="text-h2 text-decoration-underline">
+      <h1
+        class="text-h4 text-sm-h2 text-decoration-underline text-center font-weight-light"
+      >
         Project Design and Management
       </h1>
     </v-row>
@@ -84,7 +102,7 @@
 export default {
   name: "Skills",
 
-  data: () => ({}),
+  data: () => ({})
 };
 </script>
 

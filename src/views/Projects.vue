@@ -1,10 +1,10 @@
 <template>
   <v-container class="text-center">
-    <v-row class="">
+    <v-row>
       <!-- Find Your Fit Card -->
       <v-card
         width="700"
-        class="mb-5 mt-8 ml-auto mr-auto"
+        class="mb-5 mt-8 ml-auto mr-auto "
         elevation="2"
         outlined
         color="#d4fae2"
@@ -45,10 +45,11 @@
           </v-col>
         </v-row>
       </v-card>
+    </v-row>
+    <!-- Stock Ticker Symbol Card -->
 
-      <!-- Stock Ticker Symbol Card -->
-
-      <v-card
+    <v-row
+      ><v-card
         width="700"
         class="mb-5 mt-8 ml-auto mr-auto"
         elevation="2"
