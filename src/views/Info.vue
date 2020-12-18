@@ -1,12 +1,9 @@
 <template>
   <v-container>
-    <v-row class="justify-center">
-      <h1 class="text-h3 text-sm-h2 mt-10 mb-5 text-decoration-underline">
-        Contact Information
-      </h1>
-    </v-row>
-    <v-row class="justify-center">
-      <h1 class="text-h5 text-sm-h4 mt-5 text-center">
+    <v-row class="justify-center mt-10">
+      <h1
+        class="text-h5 text-sm-h3 mt-sm-5 text-center titleText font-weight-font-font-weight-regular"
+      >
         Feel free to contact me and I will get back to you as soon as possible!
       </h1>
     </v-row>
@@ -67,5 +64,9 @@ export default {};
 <style>
 .button {
   color: dimgrey;
+}
+
+.titleText {
+  width: 800px;
 }
 </style>
