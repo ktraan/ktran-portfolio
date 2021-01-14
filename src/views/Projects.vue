@@ -4,7 +4,7 @@
       <!-- Find Your Fit Card -->
       <v-card
         width="700"
-        class="mb-5 mt-8 ml-auto mr-auto "
+        class="mb-5 mt-8 ml-auto mr-auto d-none d-sm-flex"
         elevation="2"
         outlined
         color="#d4fae2"
@@ -51,7 +51,7 @@
     <v-row
       ><v-card
         width="700"
-        class="mb-5 mt-8 ml-auto mr-auto"
+        class="mb-5 mt-8 ml-auto mr-auto d-none d-sm-flex"
         elevation="2"
         outlined
         color="#d4fae2"
@@ -97,7 +97,7 @@
       <!-- Property Assessment Card -->
       <v-card
         width="700"
-        class="mb-5 mt-8 ml-auto mr-auto"
+        class="mb-5 mt-8 ml-auto mr-auto d-none d-sm-flex"
         elevation="2"
         outlined
         color="#d4fae2"
@@ -194,7 +194,7 @@ export default {
   data: () => ({
     icons: {
       github: "mdi-github",
-      source: "mdi-xml"
+      source: "mdi-xml",
     },
     links: {
       stockRepo: "https://github.com/ktraan/StockPriceChecker",
@@ -202,9 +202,9 @@ export default {
         "https://github.com/ktraan/StockPriceChecker/blob/master/StockPriceApp/app/src/main/java/ca/nait/ktran36/stockpriceapp/MainActivity.java",
       propertyRepo: "https://github.com/ktraan/PropertyAssessment",
       propertySource:
-        "https://github.com/ktraan/PropertyAssessment/blob/main/dmit2015-winter2020term-sectiona01-assignment04-ktraan-master/dmit2015-assignment04-ktran36/src/main/java/ktran36/assignment04/PropertyAssessmentResource.java"
-    }
-  })
+        "https://github.com/ktraan/PropertyAssessment/blob/main/dmit2015-winter2020term-sectiona01-assignment04-ktraan-master/dmit2015-assignment04-ktran36/src/main/java/ktran36/assignment04/PropertyAssessmentResource.java",
+    },
+  }),
 };
 </script>
 
