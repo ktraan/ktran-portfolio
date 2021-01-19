@@ -8,21 +8,21 @@
       elevation="2"
     >
       <v-row>
-        <v-card-title class="text-h5 pt-5 pl-7 font-weight-medium ">{{
-          project.name
-        }}</v-card-title>
+        <v-card-title class="text-h5 pt-5 pl-7 font-weight-medium ">
+          {{ project.name }}
+        </v-card-title>
 
         <v-btn class="ml-auto" icon color="black" :href="project.repo" x-large>
           <v-icon>{{ icons.github }}</v-icon>
         </v-btn>
-        <v-btn class="mr-5" icon color="black" :href="project.source" x-large>
+        <v-btn class="pr-3" icon color="black" :href="project.source" x-large>
           <v-icon>{{ icons.source }}</v-icon>
         </v-btn>
 
         <div class="text-h6 black--text mt-n2 ml-10 font-weight-light">
           {{ project.createdWithText }}
         </div>
-        <div class="text-h7 font-weight-thin ml-12 mt-2 mb-4">
+        <div class="text-h7 font-weight-thin ml-12 mr-5 mt-2 mb-4">
           {{ project.descriptionText }}
         </div>
       </v-row>
@@ -35,7 +35,7 @@ export default {
   data: () => ({
     icons: {
       github: "mdi-github",
-      source: "mdi-xml",
+      source: "mdi-xml"
     },
     projects: [
       {
@@ -44,7 +44,7 @@ export default {
         descriptionText:
           "A web application to help connect users with health & fitness professionals.",
         repo: "https://github.com/ktraan",
-        source: "https://github.com/ktraan",
+        source: "https://github.com/ktraan"
       },
       {
         name: "Property Assessment",
@@ -52,7 +52,7 @@ export default {
         descriptionText:
           "An application that takes an Edmonton address to get the property assessment of that location.",
         repo: "https://github.com/ktraan/PropertyAssessment",
-        source: "",
+        source: ""
       },
       {
         name: "Stock Price Checker",
@@ -61,9 +61,9 @@ export default {
           "A mobile app gets information based on a stock ticker symbol.",
         repo: "https://github.com/ktraan/StockPriceChecker",
         source:
-          "https://github.com/ktraan/StockPriceChecker/blob/master/StockPriceApp/app/src/main/java/ca/nait/ktran36/stockpriceapp/MainActivity.java",
-      },
-    ],
-  }),
+          "https://github.com/ktraan/StockPriceChecker/blob/master/StockPriceApp/app/src/main/java/ca/nait/ktran36/stockpriceapp/MainActivity.java"
+      }
+    ]
+  })
 };
 </script>
