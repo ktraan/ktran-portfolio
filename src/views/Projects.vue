@@ -1,191 +1,57 @@
 <template>
-  <v-container class="text-center">
-    <v-row>
-      <!-- Find Your Fit Card -->
-      <v-card
-        width="700"
-        class="mb-5 mt-8 ml-auto mr-auto d-none d-sm-flex"
-        elevation="2"
-        outlined
-        color="#d4fae2"
-      >
-        <v-card-title class="font-weight-medium mt-4 ml-4 cardTitle ">
-          Find Your Fit
+  <v-container>
+    <!-- XS -->
+    <v-card
+      v-for="project in projects"
+      :key="project.name"
+      class="d-flex d-sm-none mt-5 mb-5 pa-2"
+      color="#d4fae2"
+      elevation="2"
+    >
+      <v-row>
+        <v-card-title class="text-h5 pt-5 pl-7 font-weight-medium ">
+          {{ project.name }}
         </v-card-title>
-        <p class="d-flex ml-10">- Created with Vue.js, Express, and MongoDB</p>
-        <v-row>
-          <v-col cols="8">
-            <v-card-text class="ml-10 cardText text-left mb-5">
-              A web application to help connect users with health & fitness
-              professionals.
-            </v-card-text>
-            <v-row class="mt-1 mb-1">
-              <a :href="links.stockRepo" class="mt-5">
-                <v-icon color="#32ad5d" x-large class="ml-10">
-                  {{ icons.github }}
-                </v-icon>
-              </a>
 
-              <a :href="links.stockSource" class="mt-5">
-                <v-icon color="#32ad5d" x-large class="ml-5">
-                  {{ icons.source }}
-                </v-icon>
-              </a>
-            </v-row>
-          </v-col>
-          <v-col cols="4">
-            <v-img
-              lazy-src="../assets/meditate.png"
-              src="../assets/meditate.png"
-              max-width="90"
-              max-height="170"
-              class="ml-auto mr-12"
-            >
-            </v-img>
-          </v-col>
-        </v-row>
-      </v-card>
-    </v-row>
-    <!-- Stock Ticker Symbol Card -->
+        <v-btn class="ml-auto" icon color="black" :href="project.repo" x-large>
+          <v-icon>{{ icons.github }}</v-icon>
+        </v-btn>
+        <v-btn class="pr-3" icon color="black" :href="project.source" x-large>
+          <v-icon>{{ icons.source }}</v-icon>
+        </v-btn>
 
-    <v-row
-      ><v-card
-        width="700"
-        class="mb-5 mt-8 ml-auto mr-auto d-none d-sm-flex"
-        elevation="2"
-        outlined
-        color="#d4fae2"
-      >
-        <v-card-title class="font-weight-medium mt-4 ml-4 cardTitle ">
-          Stock Ticker Checker
+        <div class="text-h6 black--text mt-n2 ml-10 font-weight-light">
+          {{ project.createdWithText }}
+        </div>
+        <div class="text-h7 font-weight-thin ml-12 mr-5 mt-2 mb-4">
+          {{ project.descriptionText }}
+        </div>
+      </v-row>
+    </v-card>
+
+    <!-- SM & UP -->
+    <v-card
+      v-for="project in projects"
+      :key="project.name"
+      width="1000"
+      class="mt-5 mb-5 ml-auto mr-auto d-none d-sm-flex"
+      elevation="2"
+      outlined
+      color="#d4fae2"
+    >
+      <v-row class="pa-4"
+        ><v-card-title class="text-h2 ">
+          {{ project.name }}
         </v-card-title>
-        <p class="d-flex ml-10">- Created with Java in Android Studio</p>
-        <v-row>
-          <v-col cols="8">
-            <v-card-text class="ml-10 cardText text-left mb-5">
-              A mobile app gets information based on a stock ticker symbol.
-            </v-card-text>
-            <v-row class="mt-1 mb-1">
-              <a :href="links.stockRepo" class="mt-5">
-                <v-icon color="#32ad5d" x-large class="ml-10">
-                  {{ icons.github }}
-                </v-icon>
-              </a>
+        <v-img class="ml-auto mr-10" max-width="120" :src="project.src">
+        </v-img>
+        <div class="text-h4 ml-7 mt-n3">- {{ project.createdWithText }}</div>
 
-              <a :href="links.stockSource" class="mt-5">
-                <v-icon color="#32ad5d" x-large class="ml-5">
-                  {{ icons.source }}
-                </v-icon>
-              </a>
-            </v-row>
-          </v-col>
-          <v-col cols="4">
-            <v-img
-              lazy-src="../assets/stock.png"
-              src="../assets/stock.png"
-              max-width="100"
-              max-height="170"
-              class="ml-auto mr-9"
-            >
-            </v-img>
-          </v-col>
-        </v-row>
-      </v-card>
-    </v-row>
-
-    <v-row class="mb-md-16">
-      <!-- Property Assessment Card -->
-      <v-card
-        width="700"
-        class="mb-5 mt-8 ml-auto mr-auto d-none d-sm-flex"
-        elevation="2"
-        outlined
-        color="#d4fae2"
-      >
-        <v-card-title class="font-weight-medium mt-4 ml-4 cardTitle ">
-          Property Assessment
-        </v-card-title>
-        <p class="d-flex ml-10">- Created with Java, SQL and Vue.js</p>
-        <v-row>
-          <v-col cols="8">
-            <v-card-text class="ml-10 cardText text-left mb-5">
-              An application that takes an Edmonton address to get the property
-              assessment of that location.
-            </v-card-text>
-            <v-row class="mt-1 mb-1">
-              <!-- <a :href="links.stockRepo" class="mt-5"> -->
-              <a href="/" class="mt-5">
-                <v-icon color="#32ad5d" x-large class="ml-10">
-                  {{ icons.github }}
-                </v-icon>
-              </a>
-
-              <!-- <a :href="links.stockSource" class="mt-5"> -->
-              <a href="/" class="mt-5">
-                <v-icon color="#32ad5d" x-large class="ml-5">
-                  {{ icons.source }}
-                </v-icon>
-              </a>
-            </v-row>
-          </v-col>
-          <v-col cols="4" class="">
-            <v-img
-              lazy-src="../assets/house.png"
-              src="../assets/house.png"
-              max-width="100"
-              max-height="170"
-              class="ml-auto mr-12"
-            >
-            </v-img>
-          </v-col>
-        </v-row>
-      </v-card>
-
-      <!-- Another Card -->
-      <!-- <v-card
-        width="700"
-        class="mb-5 mt-8 ml-auto mr-auto"
-        elevation="2"
-        outlined
-        color="#d4fae2"
-      >
-        <v-card-title class="font-weight-medium mt-4 ml-4 cardTitle ">
-          Property Assessment
-        </v-card-title>
-        <p class="d-flex ml-10">- Created with Java, SQL and Vue.js</p>
-        <v-row>
-          <v-col cols="8">
-            <v-card-text class="ml-10 cardText text-left mb-5">
-              An application that takes an Edmonton address to get the property
-              assessment of that location.
-            </v-card-text>
-            <v-row class="mt-1 mb-1">
-              <a :href="links.stockRepo" class="mt-5">
-                <v-icon color="#32ad5d" x-large class="ml-10">
-                  {{ icons.github }}
-                </v-icon>
-              </a>
-
-              <a :href="links.stockSource" class="mt-5">
-                <v-icon color="#32ad5d" x-large class="ml-5">
-                  {{ icons.source }}
-                </v-icon>
-              </a>
-            </v-row>
-          </v-col>
-          <v-col cols="4" class="">
-            <v-img
-              lazy-src="../assets/house.png"
-              src="../assets/house.png"
-              max-width="100"
-              max-height="170"
-              class="ml-auto mr-12"
-            >
-            </v-img>
-          </v-col>
-        </v-row>
-      </v-card> -->
-    </v-row>
+        <div class="text-h5 ml-14 mr-16 mt-2">
+          {{ project.descriptionText }}
+        </div>
+      </v-row>
+    </v-card>
   </v-container>
 </template>
 
@@ -194,35 +60,39 @@ export default {
   data: () => ({
     icons: {
       github: "mdi-github",
-      source: "mdi-xml",
+      source: "mdi-xml"
     },
-    links: {
-      stockRepo: "https://github.com/ktraan/StockPriceChecker",
-      stockSource:
-        "https://github.com/ktraan/StockPriceChecker/blob/master/StockPriceApp/app/src/main/java/ca/nait/ktran36/stockpriceapp/MainActivity.java",
-      propertyRepo: "https://github.com/ktraan/PropertyAssessment",
-      propertySource:
-        "https://github.com/ktraan/PropertyAssessment/blob/main/dmit2015-winter2020term-sectiona01-assignment04-ktraan-master/dmit2015-assignment04-ktran36/src/main/java/ktran36/assignment04/PropertyAssessmentResource.java",
-    },
-  }),
+
+    projects: [
+      {
+        name: "Find Your Fit",
+        createdWithText: "Created with Vue.js, Express, and MongoDB",
+        descriptionText:
+          "A web application to help connect users with health & fitness professionals.",
+        repo: "https://github.com/ktraan",
+        source: "https://github.com/ktraan",
+        src: require("../assets/meditate.png")
+      },
+      {
+        name: "Property Assessment",
+        createdWithText: "Created with React and JavaScript",
+        descriptionText:
+          "An application that takes an Edmonton address to get the property assessment of that location.",
+        repo: "https://github.com/ktraan/PropertyAssessment",
+        source: "",
+        src: require("../assets/house.png")
+      },
+      {
+        name: "Stock Price Checker",
+        createdWithText: "Created with Java in Android Studio",
+        descriptionText:
+          "A mobile app gets information based on a stock ticker symbol.",
+        repo: "https://github.com/ktraan/StockPriceChecker",
+        source:
+          "https://github.com/ktraan/StockPriceChecker/blob/master/StockPriceApp/app/src/main/java/ca/nait/ktran36/stockpriceapp/MainActivity.java",
+        src: require("../assets/stock.png")
+      }
+    ]
+  })
 };
 </script>
-
-<style>
-.container {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  /* color: #b1fab7; */
-}
-.titleText {
-  font-size: 3rem;
-}
-.cardTitle {
-  font-size: 2.5rem;
-}
-
-.cardText {
-  font-size: 25px;
-  width: 500px;
-}
-</style>
