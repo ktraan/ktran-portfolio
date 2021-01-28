@@ -39,8 +39,8 @@
       outlined
       color="#d4fae2"
     >
-      <v-row class="pa-4"
-        ><v-card-title class="text-h2 ">
+      <v-row class="pa-4">
+        <v-card-title class="text-h2 ">
           {{ project.name }}
         </v-card-title>
         <v-img class="ml-auto mr-10" max-width="120" :src="project.src">
@@ -50,8 +50,17 @@
         <div class="text-h5 ml-14 mr-16 mt-2">
           {{ project.descriptionText }}
         </div>
+        <div class="ml-auto mr-auto mt-2">
+          <v-btn icon :href="project.repo">
+            <v-icon x-large color="black">{{ icons.github }}</v-icon>
+          </v-btn>
+          <v-btn class="ml-5" icon :href="project.source">
+            <v-icon x-large color="black">{{ icons.source }}</v-icon>
+          </v-btn>
+        </div>
       </v-row>
     </v-card>
+    <v-spacer class="mt-16"></v-spacer>
   </v-container>
 </template>
 
@@ -86,7 +95,7 @@ export default {
         name: "Stock Price Checker",
         createdWithText: "Created with Java in Android Studio",
         descriptionText:
-          "A mobile app gets information based on a stock ticker symbol.",
+          "An android application that gets information based on a stock ticker symbol.",
         repo: "https://github.com/ktraan/StockPriceChecker",
         source:
           "https://github.com/ktraan/StockPriceChecker/blob/master/StockPriceApp/app/src/main/java/ca/nait/ktran36/stockpriceapp/MainActivity.java",
