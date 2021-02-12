@@ -12,7 +12,7 @@
       <v-icon>mdi-phone</v-icon>
       <p class="text-h5 mt-3 ml-3">(780)-233-2065</p>
       <!-- Email -->
-      <v-icon class="ml-10">mdi-email</v-icon>
+      <v-icon class=" ml-sm-10">mdi-email</v-icon>
       <p class="text-h5 mt-3 ml-3">kevintraan@live.com</p>
     </v-row>
     <!-- Linkedin -->

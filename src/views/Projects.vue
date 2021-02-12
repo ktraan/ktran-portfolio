@@ -16,16 +16,20 @@
         <v-btn
           v-if="project.url"
           :href="project.url"
-          class="ml-5 mt-3"
+          class="ml-auto mt-3"
           outlined
           ripple
+          width="50"
         >
           Demo
         </v-btn>
-        <v-btn class="ml-auto" icon color="black" :href="project.repo" x-large>
-          <v-icon>{{ icons.github }}</v-icon>
-        </v-btn>
-        <v-btn class="pr-3" icon color="black" :href="project.source" x-large>
+        <v-btn
+          class="pr-3 ml-auto"
+          icon
+          color="black"
+          :href="project.repo"
+          x-large
+        >
           <v-icon>{{ icons.source }}</v-icon>
         </v-btn>
 
@@ -59,19 +63,18 @@
         <div class="text-h5 ml-14 mr-16 mt-2">
           {{ project.descriptionText }}
         </div>
+
+        <v-divider class="mt-5 mb-5" dark></v-divider>
         <div class="ml-auto mr-auto mt-2">
-          <v-btn icon :href="project.repo">
-            <v-icon x-large color="black">{{ icons.github }}</v-icon>
-          </v-btn>
           <v-btn
             v-if="project.url"
             :href="project.url"
             class="ml-5"
             outlined
             ripple
-            >Live Demo</v-btn
-          >
-          <v-btn class="ml-5" icon :href="project.source">
+            >Live Demo
+          </v-btn>
+          <v-btn class="ml-5" icon :href="project.repo">
             <v-icon x-large color="black">{{ icons.source }}</v-icon>
           </v-btn>
         </div>

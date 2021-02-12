@@ -6,7 +6,7 @@
       <v-col md="5" class="d-flex-row justify-center">
         <v-row class="d-sm-flex mt-5">
           <h2
-            class="text-h5 text-sm-h4 justify-sm-center text-decoration-underline font-weight-light"
+            class="text-h5 text-sm-h5 text-md-h4 justify-sm-center text-decoration-underline font-weight-light"
           >
             Front End Development
           </h2>
@@ -26,7 +26,7 @@
         <!-- Back End -->
         <v-row class="d-sm-flex ">
           <h2
-            class="text-h5 text-sm-h4  text-decoration-underline font-weight-light"
+            class="text-h5 text-sm-h5 text-md-h4  text-decoration-underline font-weight-light"
           >
             Back End Development:
           </h2>
@@ -41,7 +41,7 @@
         <!-- Database -->
         <v-row class="d-sm-flex mt-5">
           <h2
-            class="text-h5 text-sm-h4 text-decoration-underline font-weight-light"
+            class="text-h5 text-sm-h5 text-md-h4 text-decoration-underline font-weight-light"
           >
             Database Systems
           </h2>
@@ -73,12 +73,12 @@
     <v-row class="d-sm-flex justify-center mt-10 mb-5 ">
     
     </v-row> -->
-      <v-col md="" class="d-none d-sm-flex"></v-col>
+      <v-col md="" class="d-none"></v-col>
       <!-- Other Technologies -->
-      <v-col md="5">
+      <v-col md="6">
         <v-row class="d-sm-flex mt-5">
           <h2
-            class="text-h5 text-sm-h4 text-decoration-underline font-weight-light"
+            class="text-h5 text-sm-h5 text-md-h4 text-decoration-underline font-weight-light"
           >
             Other Technologies
           </h2>
@@ -102,14 +102,14 @@
         <!-- Project Stuff -->
         <v-row class="d-sm-flex mt-5">
           <h2
-            class="text-h5 text-sm-h4 text-decoration-underline font-weight-light"
+            class="text-h5 text-sm-h5 text-md-h4 text-decoration-underline font-weight-light"
           >
             Project Design & Management
           </h2>
         </v-row>
         <v-row class="d-sm-flex ml-n7">
           <v-list
-            class="text-h6 text-xs-h7 mb-10 font-weight-light "
+            class="text-xs-h7 text-sm-h6  mb-10 font-weight-light "
             color="#f0ffff"
             flat
           >
