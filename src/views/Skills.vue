@@ -6,7 +6,7 @@
       <v-col md="5" class="d-flex-row justify-center">
         <v-row class="d-sm-flex mt-5">
           <h2
-            class="text-h5 text-sm-h5 text-md-h4 justify-sm-center text-decoration-underline font-weight-light"
+            class="text-h5 text-sm-h5 text-md-h4 text-xl-h3 justify-sm-center text-decoration-underline font-weight-light"
           >
             Front End Development
           </h2>
@@ -26,9 +26,9 @@
         <!-- Back End -->
         <v-row class="d-sm-flex ">
           <h2
-            class="text-h5 text-sm-h5 text-md-h4  text-decoration-underline font-weight-light"
+            class="text-h5 text-sm-h5 text-md-h4 text-xl-h3  text-decoration-underline font-weight-light"
           >
-            Back End Development:
+            Back End Development
           </h2>
         </v-row>
         <v-row class="d-sm-flex mt-5 ">
@@ -41,7 +41,7 @@
         <!-- Database -->
         <v-row class="d-sm-flex mt-5">
           <h2
-            class="text-h5 text-sm-h5 text-md-h4 text-decoration-underline font-weight-light"
+            class="text-h5 text-sm-h5 text-md-h4 text-xl-h3 text-decoration-underline font-weight-light"
           >
             Database Systems
           </h2>
@@ -62,23 +62,13 @@
           </v-img>
         </v-row>
       </v-col>
-      <!-- Mobile Development -->
-      <!-- <v-row class=" d-sm-flex justify-center mt-10">
-    <h2
-    class="text-h5 text-sm-h4 text-decoration-underline font-weight-light"
-    >
-    Mobile Development
-    </h2>
-    </v-row>
-    <v-row class="d-sm-flex justify-center mt-10 mb-5 ">
-    
-    </v-row> -->
+
       <v-col md="" class="d-none"></v-col>
       <!-- Other Technologies -->
       <v-col md="6">
         <v-row class="d-sm-flex mt-5">
           <h2
-            class="text-h5 text-sm-h5 text-md-h4 text-decoration-underline font-weight-light"
+            class="text-h5 text-sm-h5 text-md-h4 text-xl-h3 text-decoration-underline font-weight-light"
           >
             Other Technologies
           </h2>
@@ -102,14 +92,14 @@
         <!-- Project Stuff -->
         <v-row class="d-sm-flex mt-5">
           <h2
-            class="text-h5 text-sm-h5 text-md-h4 text-decoration-underline font-weight-light"
+            class="text-h5 text-sm-h5 text-md-h4 text-xl-h3 text-decoration-underline font-weight-light"
           >
             Project Design & Management
           </h2>
         </v-row>
         <v-row class="d-sm-flex ml-n7">
           <v-list
-            class="text-xs-h7 text-sm-h6  mb-10 font-weight-light "
+            class="text-xs-h7 text-sm-h6 text-md-h5 text-xl-h5 mb-10 font-weight-light "
             color="#f0ffff"
             flat
           >
@@ -117,7 +107,7 @@
               DevOps - Agile Software Development, SCRUM
             </v-list-item>
             <v-list-item class="listItemText">
-              UML - Use Case, Sequential & Class Diagrams
+              UML - Use Cases, Sequential & Class Diagrams
             </v-list-item>
             <v-list-item class="listItemText">
               Database Design - Normalization & ERD's
@@ -133,7 +123,7 @@
 export default {
   name: "Skills",
 
-  data: () => ({}),
+  data: () => ({})
 };
 </script>
 

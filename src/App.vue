@@ -1,5 +1,5 @@
 <template>
-  <v-app class="myFont">
+  <v-app>
     <Header />
     <v-main>
       <transition name="fade">
@@ -13,12 +13,12 @@
 <script>
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+
 export default {
   name: "App",
 
   components: {
     Header,
-
     Footer
   },
 
@@ -43,35 +43,16 @@ export default {
 .fade-leave-active {
   opacity: 0;
 }
-.myFont {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-}
 #app {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
   background-color: azure;
 }
 
-main {
-  /* color: dimgrey; */
-}
-
-body {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-}
 a {
   font-size: 1.2rem;
   font-weight: normal;
   white-space: nowrap;
   align-content: center;
   text-decoration: none;
-}
-
-.h1 {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
 }
 
 .name {

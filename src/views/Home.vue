@@ -2,7 +2,7 @@
   <v-container class="text-center">
     <div id="about">
       <h1
-        class="mt-10 mb-10 text-h4 text-sm-h4 d-flex justify-center font-weight-light"
+        class="mt-10 mb-10 text-h4 text-sm-h4 text-xl-h3 d-flex justify-center font-weight-light"
       >
         Welcome to my Portfolio!
       </h1>
@@ -18,7 +18,7 @@
         /> </v-row
     ></v-avatar>
     <h2
-      class="text-h4 text-sm-h4 mt-10 mb-md-5 font-weight-light d-flex justify-sm-center"
+      class="text-h4 text-sm-h4 text-xl-h3 mt-10 mb-md-5 font-weight-light d-flex justify-sm-center"
     >
       I'm Kevin Tran and I'm a full-stack developer.
     </h2>
@@ -38,7 +38,7 @@ export default {
   name: "Home",
   data: () => ({}),
 
-  computed: {},
+  computed: {}
 };
 </script>
 

@@ -2,7 +2,7 @@
   <v-container>
     <v-row class="justify-center mt-10">
       <h1
-        class="text-h5 text-sm-h5 mt-sm-5 text-center titleText font-weight-font-font-weight-regular"
+        class="text-h5 text-sm-h5 text-xl-h4 mt-sm-5 text-center titleText font-weight-font-font-weight-regular"
       >
         Feel free to contact me and I will get back to you as soon as possible!
       </h1>
