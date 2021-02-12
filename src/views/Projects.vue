@@ -4,7 +4,7 @@
     <v-card
       v-for="project in projects"
       :key="project.name"
-      class="d-flex d-sm-none mt-5 mb-5 pa-2"
+      class="d-flex d-sm-none mt-5 mb-5 pa-5"
       color="#d4fae2"
       elevation="2"
     >
@@ -98,7 +98,7 @@ export default {
         createdWithText: "Created with Vue.js, Express, and MongoDB",
         descriptionText:
           "A web application to help connect users with health & fitness professionals.",
-        repo: "https://github.com/ktraan",
+        repo: "https://github.com/ktraan/FindYourFit",
         source: "https://github.com/ktraan",
         src: require("../assets/meditate.png"),
       },
