@@ -1,7 +1,7 @@
 <template>
   <v-container class="text-center">
     <div id="about">
-      <h1 class="mt-10 mb-10 text-h2">
+      <h1 class="mt-10 mb-10 text-h5">
         Welcome to my Portfolio!
       </h1>
     </div>
@@ -16,7 +16,7 @@
         />
       </v-row>
     </v-avatar>
-    <h2 class="text-h3 mt-10 mb-9 font-weight-light">
+    <h2 class="text-h4 mt-10 mb-9 font-weight-light">
       I'm Kevin Tran and I'm a full-stack developer.
     </h2>
     <v-row justify="center">

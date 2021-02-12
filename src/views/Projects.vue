@@ -13,6 +13,15 @@
           {{ project.name }}
         </v-card-title>
 
+        <v-btn
+          v-if="project.url"
+          :href="project.url"
+          class="ml-5 mt-3"
+          outlined
+          ripple
+        >
+          Demo
+        </v-btn>
         <v-btn class="ml-auto" icon color="black" :href="project.repo" x-large>
           <v-icon>{{ icons.github }}</v-icon>
         </v-btn>
@@ -40,10 +49,10 @@
       color="#d4fae2"
     >
       <v-row class="pa-4">
-        <v-card-title class="text-h2 ">
+        <v-card-title class="text-h4 ">
           {{ project.name }}
         </v-card-title>
-        <v-img class="ml-auto mr-10" max-width="120" :src="project.src">
+        <v-img class="ml-auto mr-10" max-width="100" :src="project.src">
         </v-img>
         <div class="text-h4 ml-7 mt-n3">- {{ project.createdWithText }}</div>
 
@@ -54,6 +63,14 @@
           <v-btn icon :href="project.repo">
             <v-icon x-large color="black">{{ icons.github }}</v-icon>
           </v-btn>
+          <v-btn
+            v-if="project.url"
+            :href="project.url"
+            class="ml-5"
+            outlined
+            ripple
+            >Live Demo</v-btn
+          >
           <v-btn class="ml-5" icon :href="project.source">
             <v-icon x-large color="black">{{ icons.source }}</v-icon>
           </v-btn>
@@ -69,7 +86,7 @@ export default {
   data: () => ({
     icons: {
       github: "mdi-github",
-      source: "mdi-xml"
+      source: "mdi-xml",
     },
 
     projects: [
@@ -80,7 +97,7 @@ export default {
           "A web application to help connect users with health & fitness professionals.",
         repo: "https://github.com/ktraan",
         source: "https://github.com/ktraan",
-        src: require("../assets/meditate.png")
+        src: require("../assets/meditate.png"),
       },
       {
         name: "Property Assessment",
@@ -88,8 +105,10 @@ export default {
         descriptionText:
           "An application that takes an Edmonton address to get the property assessment of that location.",
         repo: "https://github.com/ktraan/PropertyAssessment",
-        source: "",
-        src: require("../assets/house.png")
+        source:
+          "https://github.com/ktraan/PropertyAssessment/blob/main/src/App.js",
+        src: require("../assets/house.png"),
+        url: "https://edmonton-property-assessment.herokuapp.com",
       },
       {
         name: "Stock Price Checker",
@@ -99,9 +118,9 @@ export default {
         repo: "https://github.com/ktraan/StockPriceChecker",
         source:
           "https://github.com/ktraan/StockPriceChecker/blob/master/StockPriceApp/app/src/main/java/ca/nait/ktran36/stockpriceapp/MainActivity.java",
-        src: require("../assets/stock.png")
-      }
-    ]
-  })
+        src: require("../assets/stock.png"),
+      },
+    ],
+  }),
 };
 </script>

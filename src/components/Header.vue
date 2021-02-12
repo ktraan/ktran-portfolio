@@ -18,19 +18,28 @@
         >
       </div>
     </v-row>
-    <v-col class="d-flex justify-sm-end justify-center mt-1 text-h1">
-      <v-btn depressed color="#32ad5d" class="text-capitalize">
-        <router-link to="/" class="white--text">About</router-link>
-      </v-btn>
-      <v-btn depressed color="#32ad5d" class="text-capitalize">
-        <router-link to="/projects" class="white--text">Projects</router-link>
-      </v-btn>
-      <v-btn depressed color="#32ad5d" class="text-capitalize">
-        <router-link to="/skills" class="white--text">Skills</router-link>
-      </v-btn>
-      <v-btn depressed color="#32ad5d" class="text-capitalize">
-        <router-link to="/info" class="white--text">Info</router-link>
-      </v-btn>
+    <v-col class="d-flex justify-sm-end justify-center mt-1">
+      <router-link to="/" class="white--text text-h6 font-weight-regular"
+        >About</router-link
+      >
+
+      <router-link
+        to="/projects"
+        class="white--text text-h6 ml-6 font-weight-regular"
+        >Projects</router-link
+      >
+
+      <router-link
+        to="/skills"
+        class="white--text text-h6 ml-6 font-weight-regular"
+        >Skills</router-link
+      >
+
+      <router-link
+        to="/info"
+        class="white--text text-h6 ml-6 font-weight-regular"
+        >Info</router-link
+      >
     </v-col>
   </v-app-bar>
 </template>
@@ -41,8 +50,8 @@ export default {
   props: {
     navColor: {
       type: String,
-      default: "#32ad5d"
-    }
-  }
+      default: "#32ad5d",
+    },
+  },
 };
 </script>
