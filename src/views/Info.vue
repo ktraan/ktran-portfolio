@@ -45,7 +45,7 @@
     <v-row class="justify-center mt-5">
       <a
         class="text-h5"
-        href="https://drive.google.com/file/d/1EEY7xjSWxSZtEiJoYUdjAj-W9tU1hwBJ/view?usp=sharing"
+        href="https://drive.google.com/file/d/1SxqIwx0pUCBzEe81hAb32jJjDZvI6rv_/view?usp=sharing"
       >
         My Resume
       </a>
